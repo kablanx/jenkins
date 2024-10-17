@@ -1,20 +1,19 @@
 pipeline {
-  agent any {
-    stages {
-      stage('Build') {
-        steps {
-          echo 'Construyendo imagen'
-        }
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Construyendo imagen'
       }
-      stage('Test') {
-        steps {
-          echo 'Realizando pruebas con junit'
-        }
+    }
+    stage('Test') {
+      steps {
+        echo 'Realizando pruebas con junit'
       }
-      stage('Deploy') {
-        steps {
-          echo 'Desplegando aplicación...'
-        }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Desplegando aplicación...'
       }
     }
   }
