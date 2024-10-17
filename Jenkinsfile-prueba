@@ -11,7 +11,7 @@ pipeline {
           echo 'Realizando pruebas con junit'
         }
       }
-      stage('Deploy) {
+      stage('Deploy') {
         steps {
           echo 'Desplegando aplicación...'
         }
